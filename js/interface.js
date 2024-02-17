@@ -27,14 +27,11 @@ function makewithdraw() {
     const withdraw_blance =
       document.getElementById("withdraw_ammount").innerHTML;
 
-    document.getElementById("withdraw_ammount").innerHTML = withdraw_blance;
-
-    const total_withdraw =
-      parseInt(withdraw_input.value) + parseInt(withdraw_blance);
-    document.getElementById("withdraw_ammount").innerHTML = total_withdraw;
-
     function totalBlanceCountdown(total_balance, withdraw_input) {
       if (parseInt(total_balance) >= parseInt(withdraw_input.value)) {
+        const total_withdraw =
+          parseInt(withdraw_input.value) + parseInt(withdraw_blance);
+        document.getElementById("withdraw_ammount").innerHTML = total_withdraw;
         document.getElementById("total_balance").innerHTML =
           parseInt(total_balance) - parseInt(withdraw_input.value);
       } else {
