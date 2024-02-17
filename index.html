@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baper Bank</title>
     <!-- Add Tailwind & DaisyUI -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- <style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
-    </style> -->
+    </style>
 
     <!-- Add Google Font -->
-    <!-- <style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
     </style>
 
@@ -22,7 +22,7 @@
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
-    </style> -->
+    </style>
 
     <!-- tailwind Custom Property -->
 
@@ -41,7 +41,7 @@
 
 </head>
 
-<body>
+<body class="font-manrope">
     <header class="text-center mt-7">
         <h1 class="text-5xl font-semibold">Welcome to<span class="text-blue-700	"> Bapeer Bank </span></h1>
     </header>
@@ -49,12 +49,14 @@
         <section class=" bg-teal-500  w-8/12 h-3/6 m-auto mt-5 p-3">
             <div class="mx-auto pl-5">
                 <h1 class="text-3xl mb-5">Please Log In</h1>
-                <input type="email" name="" id="" class="block mb-4 p-3 w-5/12 rounded-md" placeholder="bap@family.com">
+                <input type="email" name="" id="user-email" class="block mb-4 p-3 w-5/12 rounded-md"
+                    placeholder="bap@family.com">
 
-                <input type="password" name="" id="" class="block mb-4 p-3 w-5/12 rounded-md"
+                <input type="password" name="" id="user-password" class="block mb-4 p-3 w-5/12 rounded-md"
                     placeholder="Your Password">
-                <button type="submit"
-                    class="bg-red-600 text-white px-5 py-4 rounded-lg hover:bg-sky-700">Submit</button>
+
+                <button type="submit" class="bg-red-600 text-white px-5 py-4 rounded-lg hover:bg-sky-700"
+                    id="btn-submit">Submit</button>
             </div>
 
 
@@ -63,6 +65,7 @@
     </main>
     <footer>
     </footer>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

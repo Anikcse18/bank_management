@@ -4,60 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baper Bank</title>
+    <title>Bank </title>
     <!-- Add Tailwind & DaisyUI -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" /> -->
+
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
-    </style> -->
 
     <!-- Add Google Font -->
-    <!-- <style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
     </style>
-
     <style>
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
-    </style> -->
+    </style>
 
-    <!-- tailwind Custom Property -->
 
-    <!-- <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        "bike-primary": "#E76F51",
-                        "bike-secondary": "red",
-                    },
-                },
-            },
-        };
-    </script> -->
 
 </head>
 
 <body>
-    <header class="text-center mt-7">
-        <h1 class="text-5xl font-semibold">Welcome to<span class="text-blue-700	"> Bapeer Bank </span></h1>
+    <header>
+        <header class="text-center mt-7">
+            <img src="./logo.jpg" alt="" class=" w-32 h-auto mx-auto">
+            <h1 class="text-5xl font-semibold">Welcome to<span class="text-blue-700	"> Bap er Bank </span></h1>
+        </header>
     </header>
     <main>
-        <section class=" bg-teal-500  w-8/12 h-3/6 m-auto mt-5 p-3">
-            <div class="mx-auto pl-5">
-                <h1 class="text-3xl mb-5">Please Log In</h1>
-                <input type="email" name="" id="" class="block mb-4 p-3 w-5/12 rounded-md" placeholder="bap@family.com">
+        <section class="bg-cyan-700	 w-8/12 mx-auto mt-9 p-8">
+            <div class="border p-3">
+                <div class="grid grid-cols-3 place-items-center	">
+                    <div class="bg-teal-400 w-2/4 text-center rounded-md p-3">
+                        <h1 class="text-white text-xl">Deposit</h1>
+                        <h1 class="text-white text-xl">$ <span>00</span></h1>
+                    </div>
+                    <div class="bg-orange-600 w-2/4 text-center rounded-md p-3">
+                        <h1 class="text-white text-xl">Withdraw</h1>
+                        <h1 class="text-white text-xl">$ <span>00</span></h1>
+                    </div>
+                    <div class="bg-yellow-400 w-2/4 text-center rounded-md p-3">
+                        <h1 class="text-white text-xl">Blance</h1>
+                        <h1 class="text-white text-xl">$ <span>00</span></h1>
+                    </div>
+                </div>
 
-                <input type="password" name="" id="" class="block mb-4 p-3 w-5/12 rounded-md"
-                    placeholder="Your Password">
-                <button type="submit"
-                    class="bg-red-600 text-white px-5 py-4 rounded-lg hover:bg-sky-700">Submit</button>
+                <!-- Deposite/withdrawbox -->
+
+                <div class="flex justify-center gap-4 p-6 mt-10">
+                    <div class="bg-green-500 w-2/4 rounded-md p-3">
+                        <h1 class="text-white text-xl">Please Deposite</h1>
+                        <div class="pt-2 ml-4">
+                            <input type="text" name="" id="deposite" class="p-2 w-7/12 block rounded-md"
+                                placeholder="$ Deposite Your Bank">
+
+                            <button type="submit"
+                                class="bg-violet-700 text-white px-4 py-2 rounded-lg mt-3 hover:bg-orange-700"
+                                id="btn-deposite">Deposite</button>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-orange-700 w-2/4 rounded-md p-3">
+                        <h1 class="text-white text-xl">Please Withdraw</h1>
+                        <div class="pt-2 ml-4">
+                            <input type="text" name="" id="deposite" class="p-2 w-7/12 block rounded-md"
+                                placeholder="$ Withdraw Your Money">
+
+                            <button type="submit"
+                                class="bg-violet-700 text-white px-4 py-2 rounded-lg mt-3 hover:bg-green-500"
+                                id="btn-withdraw">Withdraw</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
-
 
         </section>
     </main>
