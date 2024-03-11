@@ -3,7 +3,7 @@ function validation() {
   const password = document.getElementById("user-password");
 
   if (email.value === "pola@bap.com" && password.value === "12345") {
-    window.location.href = "http://127.0.0.1:5500/bank_interface.html";
+    window.location.href = "./bank_interface.html";
   } else {
     alert("Wrong Email & Password");
   }
